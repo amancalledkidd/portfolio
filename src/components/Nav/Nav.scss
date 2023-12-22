@@ -1,0 +1,37 @@
+.nav {
+    background-color: #333; // Choose a background color that fits your design
+    text-align: center; // Center the navigation items
+
+    &__list {
+        list-style-type: none; // Removes default list styling
+        margin: 0;
+        padding: 0;
+        display: inline-flex; // Display list items in a row
+        justify-content: center; // Center the items horizontally
+        align-items: center; // Align items vertically
+
+        &-item {
+            margin: 0 15px; // Spacing between each item
+
+            &__link {
+                text-decoration: none; // Removes underline from links
+                color: white; // Set the color of the links
+                font-size: 1.2em; // Adjust the font size as needed
+
+                &:hover {
+                    color: #ddd; // Color of the link on hover
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) { // Adjust for mobile view
+        &__list {
+            flex-direction: column; // Stack items vertically on smaller screens
+
+            &__list-item {
+                margin: 10px 0; // Adjust margin for vertical layout
+            }
+        }
+    }
+}
