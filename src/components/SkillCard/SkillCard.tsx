@@ -1,15 +1,14 @@
 import './SkillCard.scss';
-import gitSkill from '../../assets/images/icons/git-skill-icon.png';
+import Skill from '../../types/Skill';
 
 type SkillCardProps = {
-    skill: string;
-    image: string;
+    skill: Skill;
 }
 
-const SkillCard = () => {
+const SkillCard = ({ skill }:SkillCardProps) => {
     return (
         <div className='skill-card'>
-            <img className='skill-card__img' src={gitSkill} />
+            <img className='skill-card__img' src={skill.image} />
         </div>
     )
 }
