@@ -6,14 +6,17 @@ import SkillCard from '../SkillCard/SkillCard';
 
 const SkillList = () => {
     return (
-        <div>
-        <h1>SkillsList</h1>
-            {Skills.map((skill) => {
-                return (
-                    <SkillCard skill={skill} />
-                )
-            }
+        <div className='skill-list'>
+            <h2 className='skill-list__header'>SkillsList</h2>
+            <p className='skill-list__description'>Here are some of the technologies I've worked with:</p>
+            <div className='skill-list__card-container'>
+                {Skills.map((skill) => {
+                    return (
+                        <SkillCard skill={skill} />
+                    )
+                }
             )}
+            </div>
         </div>
     );
 }
