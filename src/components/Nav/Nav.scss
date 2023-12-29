@@ -1,13 +1,28 @@
 .nav {
-    background-color: #333; // Choose a background color that fits your design
+    display: flex; // Display items in a row
+    justify-content: space-between; // Space items evenly
+    background-color: #33333300; // Choose a background color that fits your design
     text-align: center; // Center the navigation items
+    padding-bottom: 30px;;
+
+    &__logo {
+        justify-content: left; // Align the logo to the left;
+        font-size: 1.5em; // Adjust the font size as needed
+        text-decoration: none; // Removes underline from links
+
+        &__link {
+            text-decoration: none;
+            color: black;
+        }
+    }
 
     &__list {
+
         list-style-type: none; // Removes default list styling
         margin: 0;
         padding: 0;
         display: inline-flex; // Display list items in a row
-        justify-content: center; // Center the items horizontally
+        justify-content: right; // Center the items horizontally
         align-items: center; // Align items vertically
 
         &-item {
@@ -15,17 +30,20 @@
 
             &__link {
                 text-decoration: none; // Removes underline from links
-                color: white; // Set the color of the links
                 font-size: 1.2em; // Adjust the font size as needed
+                color: #000000; // Color of the link
 
                 &:hover {
-                    color: #ddd; // Color of the link on hover
+                    color: rgb(34, 99, 6); // Color of the link on hover
                 }
             }
         }
     }
 
     @media (max-width: 600px) { // Adjust for mobile view
+        flex-direction: column; // Stack items vertically on smaller screens
+        padding: 10px 0; // Adjust padding for vertical layout
+        
         &__list {
             flex-direction: column; // Stack items vertically on smaller screens
 
@@ -34,4 +52,5 @@
             }
         }
     }
-}
+}   
+

@@ -1,16 +1,15 @@
 import './Intro.scss';
-import profilePic from '../../assets/images/profile-pic.jpeg';
+import introPic from '../../assets/images/introPic.png';
 
 const Intro = () => {
     return (
         <div className="intro">
             <div className="intro-container__content">
-                <h1 className="intro-container__title">Hi, I'm <span className="intro__name">Kumani</span></h1>
-                <h2 className="intro-container__role">Frontend Developer</h2>
-                <p className="intro-container__description">I'm a Frontend Developer with 2 years of experience. I have a passion for web development and love to create for web and mobile devices.</p>
+                <h3 className="intro-container__title">Hi, I'm <span className="intro__name">Kumani</span></h3>
+                <h2 className="intro-container__role">A Fullstack Developer based in the UK</h2>
             </div>
             <div className="intro__image-container">
-                <img className="intro__image-container__img" src={profilePic} alt="profile picture" />
+                <img className="intro__image-container__img" src={introPic} alt="profile picture" />
             </div>
         </div>
     );

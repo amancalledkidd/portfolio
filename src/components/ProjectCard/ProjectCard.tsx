@@ -9,7 +9,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
-        <div className="project-card">
+        <div id="projects" className="project-card">
         <div className="project-card__image">
             <img src={project.image} alt={project.name} />
         </div>

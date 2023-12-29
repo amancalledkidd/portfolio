@@ -1,0 +1,47 @@
+.about-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__img {
+            width: 30%;
+            height: 30%;
+            flex: 0 0 30%;
+            text-align: center;
+    
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            @media screen and (max-width: 768px) {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+
+        &__content {
+            width: 70%;
+            flex: 1;
+            padding: 15px;
+            flex-direction: column;
+        
+    
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+}
