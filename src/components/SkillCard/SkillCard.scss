@@ -1,20 +1,27 @@
 .skill-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--color-white);
-    transition: all 0.3s ease-in-out;
-    
+    background-color: #fff; // Choose a background color that fits your theme
+    border-radius: 8px; // Rounded corners
+    text-align: center; // Center the content
+    padding: 15px;
+
     &:hover {
         transform: translateY(-0.5rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     }
-    
+
     &__img {
-        font-size: 3rem;
-        color: var(--color-primary);
+        max-width: 100%; // Ensures the image is responsive
+        height: auto; // Maintain aspect ratio
+        
+        margin-bottom: 10px; // Space between image and title
     }
+
+    &__title {
+        font-size: 1.2em; // Adjust the font size as needed
+        margin: 0; // Remove default margin
+        color: #333; // Font color
+    }
+
+    // Add any hover effects or additional styling as needed
     
 }

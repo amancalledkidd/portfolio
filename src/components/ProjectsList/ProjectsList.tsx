@@ -1,3 +1,4 @@
+import './ProjectsList.scss';
 import ProjectCard from "../ProjectCard/ProjectCard";
 import Projects from "../../data/Projects";
 
@@ -7,7 +8,7 @@ const ProjectsList = () => {
         <h1>ProjectsList</h1>
             <div className="projects-list__card-container">
                 {Projects.map((project) => {
-                    return <ProjectCard project={project} />;
+                    return <ProjectCard key={project.id} project={project} />;
                 })}
             </div>
         </div>
