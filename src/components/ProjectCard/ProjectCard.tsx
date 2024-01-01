@@ -10,6 +10,16 @@ type ProjectCardProps = {
 
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
+
+    const handleLiveClick = () => {
+        window.open(project.live_url);
+    }
+
+    const handleCodeClick = () => {
+        window.open(project.github_url);
+    }
+
+
     return (
         <div id="projects" className="project-card">
             <div className="project-card__image">
@@ -20,8 +30,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <p className="project-card__description">{project.description}</p>
             </div>
             <div className="project-card__buttons">
-                <Button label="Code" />
-                <Button label="Preview" />
+                <div onClick={handleCodeClick}>
+                    <Button label="Code" />
+                </div>
+                <div onClick={handleLiveClick}>
+                    <Button label="Preview" />
+                </div>
+                
             </div>
         </div>
     );

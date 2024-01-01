@@ -1,21 +1,23 @@
 import Project from "../types/Project";
+import flavourfinder from "../assets/images/flavourFinder.png";
+import shootingarray from "../assets/images/ShootingArray.png";
 
 const Projects: Project[] = [
     {
         id: 1,
-        name: "Project 1",
-        description: "This is the first project.",
-        image: "https://via.placeholder.com/150",
-        github_url: "https://github.com",
-        live_url: "https://github.com",
+        name: "FlavourFinder",
+        description: "A recipe generator using the power of AI.",
+        image: flavourfinder,
+        github_url: "https://github.com/amancalledkidd/FlavourFinders",
+        live_url: "https://flavour-finder.onrender.com/",
     },
     {
         id: 2,
-        name: "Project 2",
-        description: "This is the second project.",
-        image: "https://via.placeholder.com/150",
-        github_url: "https://github.com",
-        live_url: "https://github.com",
+        name: "Shooting Array",
+        description: "A game based on the classic fairground game, Shooting Gallery.",
+        image: shootingarray,
+        github_url: "https://github.com/amancalledkidd/fairground-shooting-gallery",
+        live_url: "https://amancalledkidd.github.io/fairground-shooting-gallery/",
     },
     {
         id: 3,
