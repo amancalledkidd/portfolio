@@ -7,7 +7,7 @@ const Nav = () => {
     return (
         <nav className="nav">
             <div className="nav__logo">
-                <a href="/" className="nav__logo__link">My Portfolio</a>
+                <a href="/" className="nav__logo__link">Kumani Kidd</a>
             </div>
             <ul className="nav__list">
                 <li className="nav__list-item">

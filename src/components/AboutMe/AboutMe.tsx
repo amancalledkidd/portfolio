@@ -1,17 +1,17 @@
 import './AboutMe.scss';
-import profilePic from '../../assets/images/profile-pic.jpeg';
+import Me from '../../data/Me';
 
 const AboutMe = () => {
     
     return (
         <div id="about" className="about-me">
-            <h2>About Me</h2>
+            <h2>My Journey</h2>
             <div className="about-me__container">
                 <div className="about-me__container__img">
-                    <img src={profilePic} alt="Me" />
+                    <img src={Me.image} alt="Me" />
                 </div>
                 <div className="about-me__container__content">
-                    <p>May nfsfoojeoge ekfp ewkg ekfg</p>
+                    <p>{Me.description}</p>
                 </div>
             </div>
         </div>

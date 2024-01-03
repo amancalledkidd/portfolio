@@ -3,6 +3,7 @@ import flavourfinder from "../assets/images/flavourFinder.png";
 import shootingarray from "../assets/images/ShootingArray.png";
 import punkbeer from '../assets/images/PunkBeer.png'
 import tickettracker from '../assets/images/TicketTracker.png'
+import calculator from '../assets/images/Calculator.png'
 
 const Projects: Project[] = [
     {
@@ -12,6 +13,7 @@ const Projects: Project[] = [
         image: flavourfinder,
         github_url: "https://github.com/amancalledkidd/FlavourFinders",
         live_url: "https://flavour-finder.onrender.com/",
+        tech_stack: ['React','JavaScript','Node.js', 'Express', 'MongoDB']
     },
     {
         id: 2,
@@ -20,6 +22,7 @@ const Projects: Project[] = [
         image: shootingarray,
         github_url: "https://github.com/amancalledkidd/fairground-shooting-gallery",
         live_url: "https://amancalledkidd.github.io/fairground-shooting-gallery/",
+        tech_stack: ['HTML','CSS','JavaScript']
     },
     {
         id: 3,
@@ -28,6 +31,7 @@ const Projects: Project[] = [
         image: punkbeer,
         github_url: "https://github.com/amancalledkidd/punk-beer-catalogue",
         live_url: "https://amancalledkidd.github.io/punk-beer-catalogue/",
+        tech_stack: ['React','TypeScript','Sass']
     },
     {
         id: 4,
@@ -36,7 +40,18 @@ const Projects: Project[] = [
         image: tickettracker,
         github_url: "https://github.com/amancalledkidd/ticket-tracker",
         live_url: "https://amancalledkidd.github.io/ticket-tracker/",
+        tech_stack: ['React','TypeScript','Sass']
     },
+    {
+        id: 5,
+        name: "Calculator",
+        description: "A calculator made using vanilla JavaScript.",
+        image: calculator,
+        github_url: "https://github.com/amancalledkidd/ts-calculator",
+        live_url: "https://amancalledkidd.github.io/ts-calculator/",
+        tech_stack: ['HTML','CSS','JavaScript']
+    }
+
 ];
 
 export default Projects;

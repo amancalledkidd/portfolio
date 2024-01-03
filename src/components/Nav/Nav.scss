@@ -3,12 +3,14 @@
     justify-content: space-between; // Space items evenly
     background-color: #33333300; // Choose a background color that fits your design
     text-align: center; // Center the navigation items
-    padding-bottom: 30px;;
+    padding-bottom: 20px;
 
     &__logo {
         justify-content: left; // Align the logo to the left;
         font-size: 1.5em; // Adjust the font size as needed
         text-decoration: none; // Removes underline from links
+        padding: 20px;
+        padding: 30px;
 
         &__link {
             text-decoration: none;
@@ -20,7 +22,7 @@
 
         list-style-type: none; // Removes default list styling
         margin: 0;
-        padding: 0;
+        padding: 10px;
         display: inline-flex; // Display list items in a row
         justify-content: right; // Center the items horizontally
         align-items: center; // Align items vertically

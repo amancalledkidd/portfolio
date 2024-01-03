@@ -12,7 +12,7 @@ const SkillList = () => {
             <div className='skill-list__card-container'>
                 {Skills.map((skill) => {
                     return (
-                        <SkillCard skill={skill} />
+                        <SkillCard key={skill.id} skill={skill} />
                     )
                 }
             )}
