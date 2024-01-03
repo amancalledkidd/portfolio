@@ -1,6 +1,8 @@
 import Project from "../types/Project";
 import flavourfinder from "../assets/images/flavourFinder.png";
 import shootingarray from "../assets/images/ShootingArray.png";
+import punkbeer from '../assets/images/PunkBeer.png'
+import tickettracker from '../assets/images/TicketTracker.png'
 
 const Projects: Project[] = [
     {
@@ -21,19 +23,19 @@ const Projects: Project[] = [
     },
     {
         id: 3,
-        name: "Project 3",
-        description: "This is the third project.",
-        image: "https://via.placeholder.com/150",
-        github_url: "https://github.com",
-        live_url: "https://github.com",
+        name: "Punk Beer Catalogue",
+        description: "A Web Application for browsing Punk's beer catalogue.",
+        image: punkbeer,
+        github_url: "https://github.com/amancalledkidd/punk-beer-catalogue",
+        live_url: "https://amancalledkidd.github.io/punk-beer-catalogue/",
     },
     {
         id: 4,
-        name: "Project 4",
-        description: "This is the fourth project.",
-        image: "https://via.placeholder.com/150",
-        github_url: "https://github.com",
-        live_url: "https://github.com",
+        name: "Ticket Tracker",
+        description: "This is a web application for tracking job tickets.",
+        image: tickettracker,
+        github_url: "https://github.com/amancalledkidd/ticket-tracker",
+        live_url: "https://amancalledkidd.github.io/ticket-tracker/",
     },
 ];
 
