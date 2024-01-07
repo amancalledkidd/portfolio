@@ -1,12 +1,12 @@
 import './Intro.scss';
-import introPic from '../../assets/images/introPic.png';
 
 const Intro = () => {
     return (
         <div className="intro">
-            <div className="intro-container__content">
-                <h1 className="intro-container__title">Junior Software Developer</h1>
-                <h2 className="intro-container__role">A Fullstack Developer based in the UK</h2>
+            <div className="intro__content">
+                <h1 className="intro__content__title">Kumani Kidd - Junior Software Engineer</h1>
+                <h2 className="intro__content__subtitle"></h2>
+                <p className="intro__content__description">I'm a software engineer based in London, UK specializing in building (and occasionally designing) exceptional, high-quality websites and applications.</p>
             </div>
         </div>
     );

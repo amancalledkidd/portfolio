@@ -1,9 +1,15 @@
 .nav {
-    display: flex; // Display items in a row
+    display: flex; 
     justify-content: space-between; // Space items evenly
-    background-color: #33333300; // Choose a background color that fits your design
-    text-align: center; // Center the navigation items
-    padding-bottom: 20px;
+    background-color: #000000; // Choose a background color that fits your design
+    color: #ffffff; // Choose a text color that fits your design
+    text-align: center; 
+    margin-bottom: 20px;
+    top: 0;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.352);
 
     &__logo {
         justify-content: left; // Align the logo to the left;
@@ -14,7 +20,7 @@
 
         &__link {
             text-decoration: none;
-            color: black;
+            color: rgb(255, 255, 255);
         }
     }
 
@@ -33,10 +39,10 @@
             &__link {
                 text-decoration: none; // Removes underline from links
                 font-size: 1.2em; // Adjust the font size as needed
-                color: #000000; // Color of the link
+                color: #ffffff;
 
                 &:hover {
-                    color: rgb(34, 99, 6); // Color of the link on hover
+                    color: rgb(53, 174, 2); // Color of the link on hover
                 }
             }
         }

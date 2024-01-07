@@ -4,11 +4,12 @@
     text-align: center;
     padding: 20px;
     padding-left: 30px;
+    margin-bottom: 30px;
 
     &__container {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
 
         @media screen and (max-width: 768px) {
@@ -21,10 +22,13 @@
             height: 30%;
             flex: 0 0 30%;
             text-align: center;
+            margin-left: 50px;
     
             img {
                 max-width: 100%;
                 height: auto;
+                border-radius: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.352);
             }
     
             @media screen and (max-width: 768px) {
@@ -35,10 +39,24 @@
 
 
         &__content {
-            width: 70%;
+            width: 60%;
             flex: 1;
             padding: 15px;
             flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                width: 70%;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 1.2rem;
+                line-height: 1.2;
+                color: #000000;
+                text-align: center;
+                margin-bottom: 1em;
+            }
         
     
             @media screen and (max-width: 768px) {
