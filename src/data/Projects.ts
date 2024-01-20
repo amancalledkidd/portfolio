@@ -4,10 +4,20 @@ import shootingarray from "../assets/images/ShootingArray.png";
 import punkbeer from '../assets/images/PunkBeer.png'
 import tickettracker from '../assets/images/TicketTracker.png'
 import calculator from '../assets/images/Calculator.png'
+import verdeClientProject from '../assets/images/Screenshot 2024-01-20 at 15.14.38.png'
 
 const Projects: Project[] = [
     {
         id: 1,
+        name: "Resource Management System",
+        description: "A Resource Management System prototype for a skincare company.",
+        image: verdeClientProject,
+        github_url: "https://github.com/nology-tech/verde-client-project",
+        live_url: "https://verde-client-project.web.app/",
+        tech_stack: ['React','TypeScript','Sass']
+    },
+    {
+        id: 2,
         name: "FlavourFinder",
         description: "A recipe generator using the power of AI.",
         image: flavourfinder,
@@ -16,7 +26,7 @@ const Projects: Project[] = [
         tech_stack: ['React','JavaScript','Node.js', 'Express', 'MongoDB']
     },
     {
-        id: 2,
+        id: 3,
         name: "Shooting Array",
         description: "A game based on the classic fairground game, Shooting Gallery.",
         image: shootingarray,
@@ -25,7 +35,7 @@ const Projects: Project[] = [
         tech_stack: ['HTML','CSS','JavaScript']
     },
     {
-        id: 3,
+        id: 4,
         name: "Punk Beer Catalogue",
         description: "A Web Application for browsing Punk's beer catalogue.",
         image: punkbeer,
@@ -34,7 +44,7 @@ const Projects: Project[] = [
         tech_stack: ['React','TypeScript','Sass']
     },
     {
-        id: 4,
+        id: 5,
         name: "Ticket Tracker",
         description: "This is a web application for tracking job tickets.",
         image: tickettracker,
@@ -43,7 +53,7 @@ const Projects: Project[] = [
         tech_stack: ['React','TypeScript','Sass']
     },
     {
-        id: 5,
+        id: 6,
         name: "Calculator",
         description: "A calculator made using vanilla JavaScript.",
         image: calculator,
