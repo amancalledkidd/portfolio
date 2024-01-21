@@ -5,6 +5,7 @@ import punkbeer from '../assets/images/PunkBeer.png'
 import tickettracker from '../assets/images/TicketTracker.png'
 import calculator from '../assets/images/Calculator.png'
 import verdeClientProject from '../assets/images/Screenshot 2024-01-20 at 15.14.38.png'
+import greedyGoblins from '../assets/images/GreedyGoblins.png'
 
 const Projects: Project[] = [
     {
@@ -54,6 +55,15 @@ const Projects: Project[] = [
     },
     {
         id: 6,
+        name: "Greedy Goblins",
+        description: "A landing page for an NFT project.",
+        image: greedyGoblins,
+        github_url: "https://github.com/amancalledkidd/greedy-goblins",
+        live_url: "https://goblinsgreed.com/",
+        tech_stack: ['React','TypeScript','Sass']
+    },
+    {
+        id: 7,
         name: "Calculator",
         description: "A calculator made using vanilla JavaScript.",
         image: calculator,
